@@ -1,6 +1,11 @@
 <script>
 import "vue-loading-overlay/dist/vue-loading.css";
 
+import Loading from "vue-loading-overlay";
+
+
+import PrimaryButton from "@/components/PrimaryButton";
+import ShopButton from "./ShopButton";
 export default {
   name: "ShopTab",
   components: {
