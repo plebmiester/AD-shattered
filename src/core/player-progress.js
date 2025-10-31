@@ -16,7 +16,7 @@ export class PlayerProgress {
   }
 
   get isShatterUnlocked() {
-    return new Decimal(this._player.shatters).gt(0)
+    return new Decimal(this._player.shatters).gt(0);
   }
 
   get hasFullCompletion() {
