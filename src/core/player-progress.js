@@ -12,7 +12,11 @@ export class PlayerProgress {
   }
 
   get isRealityUnlocked() {
-    return new Decimal(this._player.realities).gt(0);
+    return new Decimal(this._player.realities).gt(0) || this._playerisShatterUnlocked;
+  }
+
+  get isShatterUnlocked() {
+    return new Decimal(this._player.shatters).gt(0)
   }
 
   get hasFullCompletion() {
@@ -32,7 +36,7 @@ export class PlayerProgress {
   }
 
   static hasBroken() {
-    return player.break || this.isEternityUnlocked || this.isRealityUnlocked;
+    return player.break || this.isEternityUnlocked || this.isRealityUnlocked || this.isShatterUnlocked;
   }
 
   static replicantiUnlocked() {
