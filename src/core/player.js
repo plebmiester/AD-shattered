@@ -210,6 +210,8 @@ window.player = {
   infinitiesBanked: DC.D0,
   dimensionBoosts: DC.D0,
   galaxies: DC.D0,
+  shatters: DC.D0,
+  multiversalShards: DC.D0,
   news: {
     // This is properly handled in NewsHandler.addSeenNews which adds properties as needed
     seen: {},
