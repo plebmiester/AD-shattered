@@ -3,7 +3,24 @@ import "vue-loading-overlay/dist/vue-loading.css";
 
 export default {
   name: "ShopTab",
-};
+  components: {
+    ShopButton,
+    Loading,
+    PrimaryButton,
+  },
+  data() {
+    return {
+      availableSTD: 0,
+      spentSTD: 0,
+      isLoading: false,
+      IAPsEnabled: false,
+      creditsClosed: false,
+      loggedIn: false,
+      username: "",
+      canRespec: false,
+      respecTimeStr: "",
+    };
+  },};
 </script>
 
 <template>
