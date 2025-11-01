@@ -12,7 +12,7 @@ export class PlayerProgress {
   }
 
   get isRealityUnlocked() {
-    return new Decimal(this._player.realities).gt(0) || this._player.isShatterUnlocked;
+    return new Decimal(this._player.realities).gt(0) || this.isShatterUnlocked;
   }
 
   get isShatterUnlocked() {
